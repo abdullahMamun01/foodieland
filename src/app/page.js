@@ -1,8 +1,11 @@
 import CategoriesSection from "@/components/CategoriesSection";
 import ChefFeature from "@/components/ChefFeature";
+import DeliciousRecipes from "@/components/DeliciousRecipes";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import InstagramSection from "@/components/InstagramSection";
 import LatestRecipes from "@/components/LatestRecipes";
+import NewsletterSection from "@/components/NewsletterSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,6 +16,9 @@ export default function Home() {
       <LatestRecipes />
       <ChefFeature/>
       <InstagramSection/>
+      <DeliciousRecipes/>
+      <NewsletterSection/>
+      <Footer/>
     </main>
   );
 }

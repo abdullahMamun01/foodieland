@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Heart, MessageCircle, Send, Bookmark } from "lucide-react";
+import { Heart, MessageCircle, Send, Bookmark, InstagramIcon } from "lucide-react";
 import User from "../../public/assets2/user.png";
 const instagramPosts = [
   {
@@ -46,7 +46,7 @@ const instagramPosts = [
 
 export default function InstagramSection() {
   return (
-    <section className="py-24 bg-gradient-to-b from-[#E7F9FD00] to-[#E7F9FD]">
+    <section className="py-24 bg-gradient-to-b from-[#E7F9FD00] to-[#E7F9FD] min-h-[964px]">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-16">
@@ -91,7 +91,7 @@ export default function InstagramSection() {
               </div>
 
               {/* Post Image */}
-              <div className="relative aspect-square">
+              <div className="relative aspect-square ">
                 <Image
                   src={post.image || "/placeholder.svg"}
                   alt="Instagram post"
@@ -144,9 +144,10 @@ export default function InstagramSection() {
         </div>
 
         {/* Visit Button */}
-        <div className="text-center mt-12">
-          <button className="ml-auto">
-            <span className="text-2xl leading-none">...</span>
+        <div className="flex justify-center mt-20">
+          <button className="flex items-center gap-2 px-5 py-3 bg-gray-950 text-white rounded-xl font-inter text-[14px] font-semibold leading-[16.94px] tracking-[-0.02em] text-left  decoration-skip-ink-none">
+            <span className="text-sm p-1">Visit Our Instagram</span>
+            <InstagramIcon className="w-[22px] h-[22px] mt-1" />
           </button>
         </div>
       </div>
