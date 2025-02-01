@@ -61,7 +61,7 @@ export default function NewsletterSection() {
                   placeholder="Your email address..."
                   className="absolute top-2 right-0 lg:top-4 lg:right-2 px-6 py-3 border-none focus:outline-none rounded-full   focus:ring-black/5 w-full"
                 />
-                <button className="absolute top-3.5 right-2 lg:top-2.5 lg:right-2 w-[80px] h-[35px]  md:w-[100px] md:h-[40px] lg:w-[160px] lg:h-[60px]  gap-0 rounded-[12px] text-[12px]  bg-black text-white hover:bg-gray-800">
+                <button className="absolute top-3.5 right-2 lg:top-2.5 lg:right-2 w-[80px] h-[35px]  md:w-[100px] md:h-[40px] lg:w-[140px] lg:h-[55px]  gap-0 rounded-[12px] text-xs md:text-sm lg:text-[14px]  bg-black text-white hover:bg-gray-800">
                   Subscribe
                 </button>
               </div>

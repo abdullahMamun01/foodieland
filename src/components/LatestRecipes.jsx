@@ -102,8 +102,8 @@ export default function LatestRecipes() {
       
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="font-bold text-[20px] md:text-[22px] lg:text-[24px] mb-4 line-clamp-2 text-gray-800">
+                <div className="p-6 lg:pb-9">
+                  <h3 className="font-[600] text-[20px] md:text-[22px]  mb-4 line-clamp-2 text-gray-800">
                     {recipe.title}
                   </h3>
                   <div className="flex items-center gap-4 text-gray-600">

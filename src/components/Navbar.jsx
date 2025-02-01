@@ -3,7 +3,7 @@ import { Facebook, Instagram, Menu, Twitter, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
+import Logo from '../../public/assets/logo.png'
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -16,7 +16,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-serif italic">
             <Image
-              src="/assets/Logo.png"
+              src={Logo}
               alt="Logo"
               width={100}
               height={100}

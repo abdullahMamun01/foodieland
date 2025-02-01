@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Facebook, Twitter, Instagram } from "lucide-react";
 import Image from "next/image";
-
+import Logo from '../../public/assets/logo.png'
 export default function Footer() {
   return (
     <footer className="max-w-7xl mx-auto py-6 lg:py-8 bg-white">
@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="">
               <Image
-                src="/assets/Logo.png"
+                src={Logo}
                 alt="Logo"
                 width={100}
                 height={100}

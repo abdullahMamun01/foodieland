@@ -22,12 +22,12 @@ export default function HeroSection() {
   return (
     <div className="xl:min-h-screen bg-white">
       {/* Hero Section */}
+
       <main className="max-w-7xl lg:h-[640px] mx-auto  bg-[#E7FAFE] rounded-3xl my-4 md:my-8">
-        <div className="relative grid md:grid-cols-2 gap-12 items-center h-full md:py-0">
+        <div className="relative grid md:grid-cols-2 gap-12 items-center h-full pt-2 md:py-0">
           <Image
             src={Badge}
             alt="Badge"
-            
             className="  w-[70px] h-[70px]  lg:w-32 lg:h-32  rounded-s-full absolute left-0 top-[450px] md:top-[105px] z-[100] md:left-1/2 ml-10 transform -translate-x-1/2 -translate-y-1/2 object-cover"
           />
           <div className="space-y-6 px-6 md:px-8 lg:px-10">
