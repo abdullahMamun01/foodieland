@@ -14,10 +14,10 @@ export default function AboutHeroSection() {
       />
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-gray-100 ">
             We're a team of food lovers and cooking enthusiasts
           </h1>
-          <p className="text-gray-300 text-lg mb-8">
+          <p className="text-gray-300 text-md md:text-lg mb-8">
             Discover the story behind Foodieland and our passion for sharing
             delicious recipes with food lovers around the world
           </p>

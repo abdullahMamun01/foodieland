@@ -44,13 +44,13 @@ const categories = [
 
 export default function CategoriesSection() {
   return (
-    <section className="py-20">
+    <section className="md:py-[70px] lg:py-20">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between mb-12">
-          <h2 className="text-[48px] font-bold">Categories</h2>
+          <h2 className="text-[25px] md:text-[40px] lg:text-[48px] font-bold">Categories</h2>
           <button
         
-            className="bg-[#E7FAFE] px-6 py-4 rounded-2xl font-semibold text-[16px]  transition-colors duration-150 ease-in-out"
+            className="bg-[#E7FAFE]  px-5 py-3  lg:px-6 lg:py-4 rounded-lg lg:rounded-2xl font-semibold text-[12px] md:text-sm lg:text-[16px]  transition-colors duration-150 ease-in-out"
           >
             View All Categories
           </button>
@@ -61,19 +61,19 @@ export default function CategoriesSection() {
             <Link
               key={category.name}
               href={`/category/${category.name.toLowerCase()}`}
-              className={`${category.bgColor} rounded-3xl p-6 text-center transition-transform hover:scale-105`}
+              className={`${category.bgColor} rounded-3xl px-4 md:p-5 lg:p-6 text-center transition-transform hover:scale-105`}
             >
-              <div className="aspect-square relative mb-3 ">
+              <div className="aspect-square relative mb-2 lg:mb-3 flex items-center justify-center">
                 <Image
                   width={180}
                   height={202}
                   src={category.icon || "/placeholder.svg"}
                   alt={category.name}
                   
-                  className="object-contain p-2"
+                  className="object-contain p-1 md:p-1.5 lg:p-2 w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 mx-auto"
                 />
               </div>
-              <h3 className="font-bold text-[18px]">{category.name}</h3>
+              <h3 className="font-bold mb-4 md:mb-2 lg:mb-1  text-[16px] md:text-[20px] lg:text-[18px]">{category.name}</h3>
             </Link>
           ))}
         </div>
