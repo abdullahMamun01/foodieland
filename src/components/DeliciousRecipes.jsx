@@ -63,13 +63,13 @@ const recipes = [
 
 export default function DeliciousRecipes() {
   return (
-    <section className="py-40 bg-white">
+    <section className="py-10 md:py-20 lg:py-40 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-20">
-          <h2 className="text-[48px] md:text-5xl font-semibold  max-w-lg">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-10 md:mb-20">
+          <h2 className="text-[32px] md:text-[40px] lg:text-[48px] md:text-5xl font-semibold  max-w-lg">
             Try this delicious recipe to make your day
           </h2>
-          <p className="text-gray-500 max-w-xl text-[16px]">
+          <p className="text-gray-500 leading-5 md:leading-0 max-w-xl text-xs md:text-sm lg:text-[16px]">
             Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqut enim ad minim
           </p>
@@ -93,19 +93,19 @@ export default function DeliciousRecipes() {
                   />
                 </button>
               </div>
-              <h3 className="font-bold text-xl text-gray-900 mb-3 line-clamp-2 mt-5 px-1">
+              <h3 className="font-bold text-[16px] md:text-[18px] text-gray-900 mb-2 md:mb-3 line-clamp-2 mt-5 px-1">
                 {recipe.title}
               </h3>
-              <div className="flex items-center gap-6 text-gray-500 mt-6">
+              <div className="flex items-center gap-6 text-gray-500 mt-5 md:mt-6">
                 <div className="flex items-center gap-2 ">
-                  <Clock className="w-5 h-5" fill="#000000" stroke="white" />
-                  <span className="text-sm font-[500] text-gray-900 opacity-60">
+                  <Clock className="w-[17px] md:w-[18px]" fill="#000000" stroke="white" />
+                  <span className="text-[13px] md:text-sm font-[500] text-gray-900 opacity-60">
                     {recipe.time}
                   </span>
                 </div>
                 <div className="flex items-center gap-2 ">
-                  <Utensils className="w-[18px] h-[18px]" fill="#000000" stroke="black" />
-                  <span className="text-sm text-gray-900 opacity-60 font-[500]">
+                  <Utensils className="w-[17px] md:w-[18px] h-[18px]" fill="#000000" stroke="black" />
+                  <span className="text-[13px] md:text-sm text-gray-900 opacity-60 font-[500]">
                     {recipe.category}
                   </span>
                 </div>

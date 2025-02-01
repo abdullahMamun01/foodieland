@@ -22,7 +22,7 @@ export default function HeroSection() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <main className="max-w-7xl min-h-[640px] mx-auto  bg-[#E7FAFE] rounded-3xl my-4 md:my-8">
+      <main className="max-w-7xl lg:min-h-[640px] mx-auto  bg-[#E7FAFE] rounded-3xl my-4 md:my-8">
         <div className="relative grid md:grid-cols-2 gap-12 items-center h-full md:py-0 pt-4">
           <Image
             src={Badge}

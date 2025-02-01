@@ -9,11 +9,11 @@ import Meat from '../../public/assets2/meat-mini.png'
 export default function ChefFeature() {
   return (
     <section className="max-w-7xl mx-auto px-4 pb-20 ">
-      <div className="grid md:grid-cols-2 gap-8 items-center max-h-[597px]">
+      <div className="grid md:grid-cols-2 gap-8 items-center min-h-[597px] lg:px-0 px-1">
         {/* Left Column - Text Content */}
-        <div className="space-y-6 h-full flex flex-col justify-center items-start">
-          <h2 className="text-[48px] font-bold leading-tight lg:mt-10">Everyone can be a <br /> chef in their own kitchen</h2>
-          <p className="text-gray-700 max-w-md">
+        <div className="space-y-4 md:space-y-5 lg:space-y-6 h-full flex flex-col justify-center items-start">
+          <h2 className="text-[32px] md:text-[40px] lg:text-[48px] font-semibold md:font-bold leading-tight">Everyone can be a <br className="hidden md:block" /> chef in their own kitchen</h2>
+          <p className="text-gray-900 opacity-60 max-w-md text-[16px]">
             Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqut enim ad minim
           </p>
@@ -31,31 +31,31 @@ export default function ChefFeature() {
               alt="Chef holding a plate"
               width={710}
               height={597}
-              className="object-contain w-[710px] h-[660px] absolute right-10"
+              className="object-contain w-[400px] h-[397px] lg:w-[710px] lg:h-[660px] absolute right-10"
               priority
             />
           </div>
 
           {/* Floating Food Elements */}
-          <div className="absolute bottom-32 left-0 animate-float-slow">
+          <div className="absolute bottom-20 lg:bottom-32 left-0 animate-float-slow">
             <Image
               src={Tomato}
               alt="Meat"
               width={50}
               height={50}
-              className="object-contain w-[40px] h-[40px]"
+              className="object-contain w-[32px] h-[32px] lg:w-[40px] lg:h-[40px]"
             />
           </div>
-          <div className="absolute top-40 left-8 animate-float-slow">
+          <div className="absolute top-20 lg:top-30 lg:top-40 left-8 animate-float-slow">
             <Image
               src={Meat}
               alt="Meat"
               width={80}
               height={80}
-              className="object-contain w-[80px] h-[80px]"
+              className="object-contain h-[70px] w-[70px] lg:w-[80px] lg:h-[80px]"
             />
           </div>
-          <div className="absolute right-32 top-32 animate-float-delayed">
+          <div className="absolute right-20 lg:right-32 lg:top-32 top-24 animate-float-delayed">
             <Image
               src={Oninon}
               alt="Onion"
@@ -64,13 +64,13 @@ export default function ChefFeature() {
               className="object-contain"
             />
           </div>
-          <div className="absolute right-8 top-60  animate-float">
+          <div className="absolute right-4 lg:right-8 top-40 lg:top-60  animate-float">
             <Image
               src={Vega}
               alt="Lettuce"
               width={70}
               height={70}
-              className="object-contain w-[70px] h-[70px]"
+              className="object-contain w-[60px] h-[60px] lg:w-[70px] lg:h-[70px]"
             />
           </div>
         </div>

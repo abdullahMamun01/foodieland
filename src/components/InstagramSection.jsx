@@ -47,14 +47,14 @@ const instagramPosts = [
 
 export default function InstagramSection() {
   return (
-    <section className="py-24 bg-gradient-to-b from-[#E7F9FD00] to-[#E7F9FD] min-h-[964px]">
+    <section className="py-10 md:py-20 lg:py-24 bg-gradient-to-b from-[#E7F9FD00] to-[#E7F9FD] min-h-[964px]">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center max-w-4xl mx-auto mb-16">
-          <h2 className="text-[48px] font-bold mb-4">
+        <div className="lg:text-center max-w-4xl mx-auto mb-12 md:mb-14 lg:mb-16">
+          <h2 className="text-[25px] md:text-[40px] lg:text-[48px] font-bold mb-4">
             Check out @foodieland on Instagram
           </h2>
-          <p className="text-gray-500 text-[16px] max-w-3.5xl text-center mx-auto">
+          <p className="text-gray-900 opacity-60 text-[12px] md:text-[14px] lg:text-[16px] max-w-3xl lg:max-w-3.5xl text-center mx-auto">
             Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqut enim ad minim
           </p>
@@ -70,7 +70,7 @@ export default function InstagramSection() {
               {/* Post Header */}
               <div className="flex items-center p-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-gray-200 overflow-hidden">
+                  <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-gray-200 overflow-hidden">
                     <Image
                       src={User}
                       alt="Foodieland profile"
@@ -79,11 +79,11 @@ export default function InstagramSection() {
                     />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold flex items-center gap-1">
+                    <p className=" text-[13px] lg:text-sm font-semibold flex items-center gap-1">
                       Foodieland
                       <span className="text-blue-500">•</span>
                     </p>
-                    <p className="text-xs text-gray-500">{post.location}</p>
+                    <p className="text-[11px] lg:text-xs text-gray-500">{post.location}</p>
                   </div>
                 </div>
                 <button className="ml-auto">
@@ -105,11 +105,11 @@ export default function InstagramSection() {
               <div className="p-4">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-4">
-                    <Heart className="w-6 h-6" />
-                    <MessageCircle className="w-6 h-6" />
-                    <Send className="w-6 h-6" />
+                    <Heart className="w-5 h-5 md:w-6 md:h-6" />
+                    <MessageCircle className="w-5 h-5 md:w-6 md:h-6" />
+                    <Send className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
-                  <Bookmark className="w-6 h-6" />
+                  <Bookmark className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
 
                 {/* Liked By Section */}
@@ -149,10 +149,10 @@ export default function InstagramSection() {
         </div>
 
         {/* Visit Button */}
-        <div className="flex justify-center mt-20">
-          <button className="flex items-center gap-2 px-5 py-3 bg-gray-950 text-white rounded-xl font-inter text-[14px] font-semibold leading-[16.94px] tracking-[-0.02em] text-left  decoration-skip-ink-none">
-            <span className="text-sm p-1">Visit Our Instagram</span>
-            <InstagramIcon className="w-[22px] h-[22px] mt-1" />
+        <div className="flex justify-center mt-10 md:mt-20">
+          <button className="flex items-center gap-2 px-4 py-2 lg:px-5 lg:py-3 bg-gray-950 text-white rounded-xl font-inter text-xs md:text-sm lg:text-[14px] font-semibold leading-[16.94px] tracking-[-0.02em] text-left  decoration-skip-ink-none">
+            <span className="text-[10px] lg:text-sm p-1">Visit Our Instagram</span>
+            <InstagramIcon className="w-[18px] h-[18px] md:w-[22px] md:h-[22px] md:mt-1" />
           </button>
         </div>
       </div>

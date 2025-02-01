@@ -66,44 +66,44 @@ const latestRecipes = [
 export default function LatestRecipes() {
   return (
     <section className="py-20 bg-white">
-      <div className="text-center max-w-2xl mx-auto mb-24">
-        <h2 className="text-4xl font-bold mb-4">Simple and tasty recipes</h2>
-        <p className="text-gray-600">
+      <div className="text-center max-w-2xl mx-auto mb-12 md:mb-20 lg:mb-24">
+        <h2 className="text-[25px] md:text-[40px] lg:text-[48px] font-bold mb-4">Simple and tasty recipes</h2>
+        <p className="text-gray-900 opacity-60 text-[12px] md:text-[14px] lg:text-[16px] px-4 md:px-1 lg:px-0">
           Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqut enim ad minim
         </p>
       </div>
 
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7 lg:gap-8">
           {latestRecipes.map((recipe, i) =>
             i === 5 ? (
-              <div key={recipe.id} className="flex justify-center items-center">
+              <div key={recipe.id} className="flex justify-center items-center ">
                 <Image
                   src={Ads}
                   alt={recipe.title}
                   width={400}
                   height={250}
-                  className="object-contain mx-auto "
+                  className="object-contain mx-auto w-full h-full  md:rounded-none rounded-md"
                 />
               </div>
             ) : (
               <div
                 key={recipe.id}
-                className="rounded-[30px] w-[400px] h-[434px] overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-gradient-to-b from-[#E7F9FD00] to-[#E7F9FD]"
+                className=" max-w-[400px] mx-auto md:max-h-[434px] rounded-[30px] overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-gradient-to-b from-[#E7F9FD00] to-[#E7F9FD]"
               >
-                <div className="w-full">
+                <div className="w-full mx-auto">
                   <Image
                     src={recipe.image || "/placeholder.svg"}
                     alt={recipe.title}
                     width={300}
                     height={250}
-                    className="object-contain mx-auto rounded-2xl "
-                    style={{ width: "368px", height: "250px" }}
+                    className="object-cover  rounded-[25px] pt-1 px-2.5   w-full h-[250px]"
+      
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-[24px] mb-4 line-clamp-2 text-gray-800">
+                  <h3 className="font-bold text-[20px] md:text-[22px] lg:text-[24px] mb-4 line-clamp-2 text-gray-800">
                     {recipe.title}
                   </h3>
                   <div className="flex items-center gap-4 text-gray-600">
