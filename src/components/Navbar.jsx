@@ -12,7 +12,7 @@ export default function Navbar() {
   };
   return (
     <div className="w-full border-b py-4">
-      <nav className="max-w-7xl mx-auto px-4 py-3.5">
+      <nav className="max-w-7xl mx-auto px-4 py-1 md:py-3.5">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-serif italic">
             <Image

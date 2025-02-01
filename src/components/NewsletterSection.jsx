@@ -49,7 +49,7 @@ export default function NewsletterSection() {
             <h2 className="text-3xl md:text-[48px] font-semibold mb-4">
               Deliciousness to your inbox
             </h2>
-            <p className="  max-w-full md:max-w-[615px] font-normal mx-auto text-base text-[14px]  md:tex-[16px] my-6 md:my-10 leading-7 text-center text-gray-900 opacity-60 mb-8">
+            <p className="  w-full lg:max-w-[615px] font-normal mx-auto  text-[14px]  md:tex-[16px] my-6 md:my-10 leading-7 text-center text-gray-900 opacity-60 mb-8">
               Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
               minim

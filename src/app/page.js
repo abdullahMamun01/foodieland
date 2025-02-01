@@ -18,7 +18,7 @@ export default function Home() {
       <InstagramSection/>
       <DeliciousRecipes/>
       <NewsletterSection/>
-      <Footer/>
+   
     </main>
   );
 }
