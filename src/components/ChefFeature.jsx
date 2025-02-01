@@ -8,7 +8,7 @@ import Meat from '../../public/assets2/meat-mini.png'
 
 export default function ChefFeature() {
   return (
-    <section className="max-w-7xl mx-auto px-4  ">
+    <section className="max-w-7xl mx-auto px-4 pb-20 ">
       <div className="grid md:grid-cols-2 gap-8 items-center max-h-[597px]">
         {/* Left Column - Text Content */}
         <div className="space-y-6 h-full flex flex-col justify-center items-start">

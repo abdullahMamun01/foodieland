@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Heart, MessageCircle, Send, Bookmark, InstagramIcon } from "lucide-react";
 import User from "../../public/assets2/user.png";
+import Oval from "../../public/assets2/Oval.png";
 const instagramPosts = [
   {
     id: 1,
@@ -115,7 +116,7 @@ export default function InstagramSection() {
                 <div className="flex items-center gap-2 mb-2">
                   <div className="w-5 h-5 rounded-full bg-gray-200 overflow-hidden">
                     <Image
-                      src="/placeholder.svg"
+                      src={Oval}
                       alt={`${post.likedBy} profile`}
                       width={20}
                       height={20}
@@ -130,11 +131,15 @@ export default function InstagramSection() {
 
                 {/* Caption */}
                 <div className="space-y-1">
-                  <p className="text-sm">
+                  <p className="text-sm line-clamp-2">
                     <span className="font-semibold">Foodieland</span>{" "}
                     {post.caption}
                   </p>
-                  <p className="text-xs text-gray-500 uppercase">
+                  
+                </div>
+
+                <div className="mt-4">
+                  <p className="text-[9px] font-[500] text-gray-400 uppercase">
                     {post.timestamp}
                   </p>
                 </div>

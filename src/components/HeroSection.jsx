@@ -16,48 +16,11 @@ import Recipie from "../../public/assets2/baked-chicken-wings.png";
 import User from "../../public/assets2/user.png";
 import Badge from "../../public/assets2/Badge.png";
 import Logo from "../../public/assets2/logo.png";
+import Navbar from "./Navbar";
 
 export default function HeroSection() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <div className="w-full border-b py-4">
-        <nav className="max-w-7xl mx-auto px-4 py-3.5">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="text-2xl font-serif italic">
-             <Image src="/assets2/Logo.png" alt="Logo" width={100} height={100}  />
-            </Link>
-            <div className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-black hover:text-gray-600">
-                Home
-              </Link>
-              <Link href="/recipes" className="text-black hover:text-gray-600">
-                Recipes
-              </Link>
-              <Link href="/blog" className="text-black hover:text-gray-600">
-                Blog
-              </Link>
-              <Link href="/contact" className="text-black hover:text-gray-600">
-                Contact
-              </Link>
-              <Link href="/about" className="text-black hover:text-gray-600">
-                About us
-              </Link>
-            </div>
-            <div className="hidden md:flex items-center space-x-4">
-              <Link href="#" className="text-gray-600 hover:text-black">
-                <Facebook className="w-5 h-5" />
-              </Link>
-              <Link href="#" className="text-gray-600 hover:text-black">
-                <Twitter className="w-5 h-5" />
-              </Link>
-              <Link href="#" className="text-gray-600 hover:text-black">
-                <Instagram className="w-5 h-5" />
-              </Link>
-            </div>
-          </div>
-        </nav>
-      </div>
 
       {/* Hero Section */}
       <main className="max-w-7xl h-[640px] mx-auto  bg-[#E7FAFE] rounded-3xl my-8">
@@ -67,7 +30,7 @@ export default function HeroSection() {
             alt="Badge"
             width={600}
             height={600}
-            className="rounded-full absolute top-[105px] z-[100] left-1/2 ml-10 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 object-cover"
+            className="rounded-s-full absolute top-[105px] z-[100] left-1/2 ml-10 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 object-cover"
           />
           <div className="space-y-6 px-10">
             <div className="inline-flex items-center  py-3 px-5 gap-2 font-bold rounded-full text-[14px]  bg-white text-black">
@@ -141,7 +104,7 @@ export default function HeroSection() {
               alt="Spicy chicken wings with dipping sauce"
               width={600}
               height={600}
-              className="rounded-2xl w-full h-full object-cover"
+              className="rounded-tr-[30px] rounded-br-[30px] w-full h-full object-cover"
             />
           </div>
         </div>

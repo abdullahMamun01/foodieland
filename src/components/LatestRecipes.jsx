@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Clock, Utensils } from "lucide-react";
 import RecepeImage from "../../public/assets2/recepie-image.png";
 import Ads from "../../public/assets2/Ads.png";
+
+
 const latestRecipes = [
   {
     id: 1,
@@ -63,7 +65,7 @@ const latestRecipes = [
 
 export default function LatestRecipes() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-20 bg-white">
       <div className="text-center max-w-2xl mx-auto mb-24">
         <h2 className="text-4xl font-bold mb-4">Simple and tasty recipes</h2>
         <p className="text-gray-600">
@@ -83,13 +85,12 @@ export default function LatestRecipes() {
                   width={400}
                   height={250}
                   className="object-contain mx-auto "
-                  
                 />
               </div>
             ) : (
               <div
                 key={recipe.id}
-                className="rounded-[30px] overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-gradient-to-b from-[#E7F9FD00] to-[#E7F9FD]"
+                className="rounded-[30px] w-[400px] h-[434px] overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-gradient-to-b from-[#E7F9FD00] to-[#E7F9FD]"
               >
                 <div className="w-full">
                   <Image
@@ -97,7 +98,7 @@ export default function LatestRecipes() {
                     alt={recipe.title}
                     width={300}
                     height={250}
-                    className="object-contain mx-auto rounded-xl"
+                    className="object-contain mx-auto rounded-2xl "
                     style={{ width: "368px", height: "250px" }}
                   />
                 </div>
@@ -107,13 +108,13 @@ export default function LatestRecipes() {
                   </h3>
                   <div className="flex items-center gap-4 text-gray-600">
                     <div className="flex items-center gap-2">
-                      <Clock className="w-5 h-5" />
+                      <Clock className="w-5 h-5" fill="black" stroke="white"/>
                       <span className="text-[14px] text-gray-600 font-semibold">
                         {recipe.time}
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Utensils className="w-5 h-5" />
+                      <Utensils className="w-5 h-5" fill="black" stroke="black"/>
                       <span className="text-[14px] text-gray-600 font-semibold">
                         {recipe.type}
                       </span>

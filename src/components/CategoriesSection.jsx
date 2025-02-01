@@ -44,13 +44,13 @@ const categories = [
 
 export default function CategoriesSection() {
   return (
-    <section className="py-16">
+    <section className="py-20">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between mb-12">
           <h2 className="text-[48px] font-bold">Categories</h2>
           <button
         
-            className="bg-[#E7FAFE] px-6 py-4 rounded-2xl font-bold text-[16px]  transition-colors duration-150 ease-in-out"
+            className="bg-[#E7FAFE] px-6 py-4 rounded-2xl font-semibold text-[16px]  transition-colors duration-150 ease-in-out"
           >
             View All Categories
           </button>
@@ -73,7 +73,7 @@ export default function CategoriesSection() {
                   className="object-contain p-2"
                 />
               </div>
-              <h3 className="font-bold text-[20px]">{category.name}</h3>
+              <h3 className="font-bold text-[18px]">{category.name}</h3>
             </Link>
           ))}
         </div>
