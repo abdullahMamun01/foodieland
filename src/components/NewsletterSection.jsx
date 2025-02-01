@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Salad from "../../public/assets2/salad.png";
-import PhotoPlate from "../../public/assets2/photo-plate.png";
-import Rucola from "../../public/assets2/rucola-png.png";
+import Salad from "../../public/assets/salad.png";
+import PhotoPlate from "../../public/assets/photo-plate.png";
+import Rucola from "../../public/assets/rucola-png.png";
 export default function NewsletterSection() {
   return (
     <section className="pb-24">
@@ -55,13 +55,13 @@ export default function NewsletterSection() {
               minim
             </p>
             <form className="  relative flex flex-col sm:flex-row gap-4 max-w-lg lg:max-w-md mx-auto overflow-hidden mt-14">
-              <div className="relative inline-block py-8 bg-white rounded-2xl w-[360px] h-[65px]  lg:h-[80px] md:w-[480px] px-4">
+              <div className="relative inline-block py-8 bg-white rounded-2xl w-full h-[65px]  lg:h-[80px] md:w-[480px] px-4">
                 <input
                   type="email"
                   placeholder="Your email address..."
-                  className="absolute top-2 right-0 lg:top-4 lg:right-2 px-10 py-3 border-none focus:outline-none rounded-full   focus:ring-black/5 w-full"
+                  className="absolute top-2 right-0 lg:top-4 lg:right-2 px-6 py-3 border-none focus:outline-none rounded-full   focus:ring-black/5 w-full"
                 />
-                <button className="absolute top-3.5 right-2 lg:top-2.5 lg:right-2 w-[100px] h-[40px] lg:w-[160px] lg:h-[60px]  gap-0 rounded-[16px] text-[14px]  bg-black text-white hover:bg-gray-800">
+                <button className="absolute top-3.5 right-2 lg:top-2.5 lg:right-2 w-[80px] h-[35px]  md:w-[100px] md:h-[40px] lg:w-[160px] lg:h-[60px]  gap-0 rounded-[12px] text-[12px]  bg-black text-white hover:bg-gray-800">
                   Subscribe
                 </button>
               </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Clock, Utensils } from "lucide-react";
-import RecepeImage from "../../public/assets2/recepie-image.png";
-import Ads from "../../public/assets2/Ads.png";
+import RecepeImage from "../../public/assets/recepie-image.png";
+import Ads from "../../public/assets/Ads.png";
 
 
 const latestRecipes = [

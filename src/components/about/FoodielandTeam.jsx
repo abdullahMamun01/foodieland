@@ -6,10 +6,10 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Team1 from "../../../public/assets2/team-1.jpg";
-import Team2 from "../../../public/assets2/team-2.jpg";
-import Team3 from "../../../public/assets2/team-5.jpg";
-import Team4 from "../../../public/assets2/team-4.jpg";
+import Team1 from "../../../public/assets/team-1.jpg";
+import Team2 from "../../../public/assets/team-2.jpg";
+import Team3 from "../../../public/assets/team-5.jpg";
+import Team4 from "../../../public/assets/team-4.jpg";
 export default function FoodielandTeam() {
   return (
     <section className="py-20 lg:py-32 bg-white max-w-7xl mx-auto">

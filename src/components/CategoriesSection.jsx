@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import Breakfast from "../../public/assets2/breakfast.png";
-import Vegan from "../../public/assets2/vegan.png";
-import Meat from "../../public/assets2/meat.png";
-import Dessert from "../../public/assets2/dessert.png";
-import Luanch from "../../public/assets2/luanch.png";
-import Chocolate from "../../public/assets2/chocolate.png";
+import Breakfast from "../../public/assets/breakfast.png";
+import Vegan from "../../public/assets/vegan.png";
+import Meat from "../../public/assets/meat.png";
+import Dessert from "../../public/assets/dessert.png";
+import Luanch from "../../public/assets/luanch.png";
+import Chocolate from "../../public/assets/chocolate.png";
 
 
 
@@ -44,7 +44,7 @@ const categories = [
 
 export default function CategoriesSection() {
   return (
-    <section className="md:py-[70px] lg:py-20">
+    <section className="py-[40px] md:py-[70px] lg-[75px] ">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between mb-12">
           <h2 className="text-[25px] md:text-[40px] lg:text-[48px] font-bold">Categories</h2>

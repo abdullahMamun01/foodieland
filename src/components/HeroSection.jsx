@@ -12,18 +12,18 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Recipie from "../../public/assets2/baked-chicken-wings.png";
-import User from "../../public/assets2/user.png";
-import Badge from "../../public/assets2/Badge.png";
-import Logo from "../../public/assets2/logo.png";
+import Recipie from "../../public/assets/baked-chicken-wings.png";
+import User from "../../public/assets/user.png";
+import Badge from "../../public/assets/Badge.png";
+import Logo from "../../public/assets/logo.png";
 import Navbar from "./Navbar";
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="xl:min-h-screen bg-white">
       {/* Hero Section */}
-      <main className="max-w-7xl lg:min-h-[640px] mx-auto  bg-[#E7FAFE] rounded-3xl my-4 md:my-8">
-        <div className="relative grid md:grid-cols-2 gap-12 items-center h-full md:py-0 pt-4">
+      <main className="max-w-7xl lg:h-[640px] mx-auto  bg-[#E7FAFE] rounded-3xl my-4 md:my-8">
+        <div className="relative grid md:grid-cols-2 gap-12 items-center h-full md:py-0">
           <Image
             src={Badge}
             alt="Badge"
@@ -35,7 +35,7 @@ export default function HeroSection() {
               <CookingPot className="md:w-5 md:h-5 w-4 h-4" stroke="#C6A07A" />{" "}
               Hot Recipes
             </div>
-            <h1 className="text-[32px] md:text-[48px] lg:text-[64px]  lg:max-w-md  font-bold leading-tight">
+            <h1 className="text-[32px] md:text-[48px] lg:tex-[56px] xl:text-[64px]  lg:max-w-md  font-bold leading-tight">
               Spicy delicious chicken wings
             </h1>
             <p className="text-gray-900 opacity-60 text-[14px] md:text-[16px]">
@@ -76,6 +76,7 @@ export default function HeroSection() {
                     width={100}
                     height={100}
                     src={User}
+                    alt="Foodieland profile"
                     className="w-full h-full object-cover"
                   />
                 </div>

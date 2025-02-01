@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Heart, MessageCircle, Send, Bookmark, InstagramIcon } from "lucide-react";
-import User from "../../public/assets2/user.png";
-import Oval from "../../public/assets2/Oval.png";
+import User from "../../public/assets/user.png";
+import Oval from "../../public/assets/Oval.png";
 const instagramPosts = [
   {
     id: 1,
@@ -61,7 +61,7 @@ export default function InstagramSection() {
         </div>
 
         {/* Instagram Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {instagramPosts.map((post) => (
             <div
               key={post.id}

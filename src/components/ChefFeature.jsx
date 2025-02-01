@@ -1,10 +1,10 @@
 
 import Image from "next/image"
-import Chief from "../../public/assets2/sheif.png"
-import Tomato from '../../public/assets2/tomato.png'
-import Oninon from '../../public/assets2/onion.png'
-import Vega from '../../public/assets2/vegan-mini.png'
-import Meat from '../../public/assets2/meat-mini.png'
+import Chief from "../../public/assets/sheif.png"
+import Tomato from '../../public/assets/tomato.png'
+import Oninon from '../../public/assets/onion.png'
+import Vega from '../../public/assets/vegan-mini.png'
+import Meat from '../../public/assets/meat-mini.png'
 
 export default function ChefFeature() {
   return (

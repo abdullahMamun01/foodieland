@@ -6,7 +6,7 @@ import HeroSection from "@/components/HeroSection";
 import InstagramSection from "@/components/InstagramSection";
 import LatestRecipes from "@/components/LatestRecipes";
 import NewsletterSection from "@/components/NewsletterSection";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
